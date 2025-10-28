@@ -22,8 +22,10 @@
 }
 
 .footer-logo {
-  width: 40px;
-  height: 40px;
+  width: 100px;        /* Aumenta o reduce este valor según te guste */
+  height: auto;       /* Mantiene la proporción del logo */
+  margin-right: 10px; /* Espacio entre el logo y el texto */
+  vertical-align: middle;
 }
 
 .footer-title {
