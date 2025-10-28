@@ -1,0 +1,48 @@
+/* 🎨 Estilos globales - TechStudio */
+
+/* 1️⃣ Variables globales (paleta de colores y tipografía) */
+:root {
+  --background: #f5f6fa;
+  --text-color: #222;
+  --muted: #666;
+  --accent: #0078ff; /* Azul principal */
+  --accent-hover: #005ecc;
+  --border-color: #e0e0e0;
+  --radius: 8px;
+
+  --font-base: 'Segoe UI', sans-serif;
+  --font-heading: 'Poppins', sans-serif;
+}
+
+/* 2️⃣ Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 3️⃣ Cuerpo general */
+body {
+  font-family: var(--font-base);
+  color: var(--text-color);
+  background-color: var(--background);
+  line-height: 1.6;
+}
+
+/* 4️⃣ Enlaces */
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+/* 5️⃣ Contenedor general opcional */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}

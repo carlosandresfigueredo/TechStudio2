@@ -1,0 +1,39 @@
+<section class="contact-hero">
+  <h1>Contáctanos</h1>
+  <p class="muted">
+    ¿Tienes un proyecto en mente o una idea que quieres hacer realidad?  
+    En TechStudio estaremos encantados de escucharte.
+  </p>
+</section>
+
+<section class="contact-grid">
+  <div class="contact-info">
+    <h3>Información de contacto</h3>
+    <p><strong>Email:</strong> hola@techstudio.com</p>
+    <p><strong>Teléfono:</strong> +34 600 123 456</p>
+    <p><strong>Ubicación:</strong> Madrid, España</p>
+
+    <p class="muted small">
+      Responderemos tu mensaje en menos de 24 horas hábiles.
+    </p>
+  </div>
+
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact-form">
+    <div class="form-group">
+      <label>Nombre</label>
+      <input type="text" formControlName="nombre" placeholder="Tu nombre" />
+    </div>
+
+    <div class="form-group">
+      <label>Correo electrónico</label>
+      <input type="email" formControlName="email" placeholder="nombre@correo.com" />
+    </div>
+
+    <div class="form-group">
+      <label>Mensaje</label>
+      <textarea rows="4" formControlName="mensaje" placeholder="Cuéntanos sobre tu proyecto..."></textarea>
+    </div>
+
+    <button type="submit" class="btn" [disabled]="contactForm.invalid">Enviar mensaje</button>
+  </form>
+</section>

@@ -1,0 +1,104 @@
+.portfolio-hero {
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.portfolio-hero h1 {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+  color: var(--text-color);
+}
+
+.portfolio-hero p {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* Grid de proyectos */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.portfolio-card {
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-body h3 {
+  font-family: var(--font-heading);
+  margin-bottom: 8px;
+  color: var(--text-color);
+}
+
+.card-body p {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* CTA final */
+.portfolio-cta {
+  text-align: center;
+  padding: 60px 20px;
+  background: var(--accent);
+  color: #fff;
+  border-radius: var(--radius);
+  margin: 60px 20px;
+}
+
+.portfolio-cta h2 {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+}
+
+.portfolio-cta p {
+  margin-bottom: 24px;
+}
+
+.portfolio-cta .btn {
+  background: #fff;
+  color: var(--accent);
+  border: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.portfolio-cta .btn:hover {
+  background: var(--accent-hover);
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .portfolio-cta {
+    margin: 40px 0;
+  }
+}
